@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <style>
+        input{
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        textarea{
+            margin-top: 10px;
+        }
+        #button{
+            margin-left: 70px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">ADMISSION FORM </h1><hr>
+        <form action="">
+           <fieldset>
+            <legend style="font-size: 40px;">Personal Details</legend>
+            <label for="name">Name :-</label>
+            <input type="text" id="name" required minlength="5"> <br>
+            <label for="fname">Father's Name :-</label>
+            <input type="text" id="fname"> <br>
+            <label for="mname">Mother's Name :-</label>
+            <input type="text" id="mname"> <br>
+            <label for="dob">Date of Birth :-</label>
+            <input type="date" id="dob"> <br>
+            <label for="">Gender :-</label>
+            <input type="radio" id="" name="gender"> <label for="">Male</label>
+            <input type="radio" id="" name="gender"> <label for="">Female</label> <br>
+            <label for=""> Marital Status :-</label>
+            <input type="checkbox" > <label for="">Single</label>
+            <input type="checkbox" > <label for="">Married</label> <br>
+            <label for="reli"> Religion :-</label>
+            <input type="text" id="reli"> <br>
+            <label for="peaddress">Permenent Address :-</label>
+            <textarea name="" id="peaddress"></textarea> <br>  
+            <label for="preaddress">Present Address :-</label>
+            <textarea name="" id="preaddress" cols="10"></textarea> <br>
+            <label for="city">City :-</label>
+            <input type="text" id="city" list="city-list" required>
+            <datalist id="city-list">
+                <option value="Rajkot" >Rajkot</option>
+                <option value="Jamnagar">Jamnagar</option>
+                <option value="Amreli">Amreli</option>
+                <option value="Junagadh">Junagadh</option>
+                <option value="Upleta">Upleta</option>
+            </datalist> <br>
+            <label for="phone">Applicant's Phone No. :-</label>
+            <input type="tel" id="phone" maxlength="10" required>
+            <label for="email">Applicant's Email :-</label>
+            <input type="email" id="email" placeholder="example@gmail.com">
+        </fieldset> 
+        <fieldset>
+            <legend style="font-size: 40px;">Academic Record</legend>
+            <table border="1" style="border-collapse: collapse;">
+                
+                <thead>
+                
+                    <tr>
+                    <th>No.</th>
+                    <th>Name of Institute</th>
+                    <th>Passing Year</th>
+                    <th>Grade/CGPA</th>
+                    </tr>
+                
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <label for=""><b>Choose Course :-</b></label>
+            <input type="checkbox"><label for="">Web Design</label>
+            <input type="checkbox"><label for="">UX Design</label>
+            <input type="checkbox"><label for="">Graphics Design</label> <br>
+            <input type="checkbox"><label for="">Software Design</label>
+            <input type="checkbox"><label for="">Python</label>
+            <input type="checkbox"><label for="">Digital Marketing</label>
+        </fieldset>
+
+        <fieldset>
+            <legend style="font-size: 40px">Document Upload</legend>
+            <label for=""><b>Passport Photo :-</b></label>
+            <input type="file" accept=".jpg , .jpeg , .png"  required>
+        </fieldset>
+
+        <fieldset>
+            <legend style="font-size: 40px">Terms & Condition </legend>
+            <input type="checkbox">
+            <label for="">I certify that the information provided in this form is true and accurate to the best of my knowledge.</label> <br>
+            <label for="">Name</label> <input type="text"> <br>
+        </fieldset> <hr> 
+        <input type="submit" id="button"> <input type="reset" id="button">
+
+        </form>
+       
+        
+    </div>
+</body>
+</html>
