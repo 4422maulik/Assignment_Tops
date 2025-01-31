@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 300px);
+        grid-template-rows: repeat(5, 250px);
+        gap: 10px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      img:nth-child(1) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      img:nth-child(2) {
+        grid-row: 2/3;
+        grid-column: 1/2;
+      }
+      /* img:nth-child(5) {
+        grid-row: 2/4;
+        grid-column: 2/4;
+      } */
+      img:nth-child(6) {
+        grid-area: 2/2/4/4;
+      }
+
+      img:hover {
+        scale: 1.2;
+        border: 3px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img
+        src="https://images.pexels.com/photos/30344387/pexels-photo-30344387/free-photo-of-elegant-classic-building-facade-with-balconies.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/27575271/pexels-photo-27575271/free-photo-of-a-small-airplane-flying-through-the-air-with-smoke-coming-out-of-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30363062/pexels-photo-30363062/free-photo-of-cozy-living-room-with-pink-sofa-cover-and-decor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30358729/pexels-photo-30358729/free-photo-of-kayaking-at-sunset-on-calm-lake-ohrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30237034/pexels-photo-30237034/free-photo-of-chateau-de-le-lude-in-golden-hour.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30408208/pexels-photo-30408208/free-photo-of-fushimi-inari-shrine-torii-gates-in-kyoto.jpeg"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30344387/pexels-photo-30344387/free-photo-of-elegant-classic-building-facade-with-balconies.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/27575271/pexels-photo-27575271/free-photo-of-a-small-airplane-flying-through-the-air-with-smoke-coming-out-of-it.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30363062/pexels-photo-30363062/free-photo-of-cozy-living-room-with-pink-sofa-cover-and-decor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30358729/pexels-photo-30358729/free-photo-of-kayaking-at-sunset-on-calm-lake-ohrid.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30237034/pexels-photo-30237034/free-photo-of-chateau-de-le-lude-in-golden-hour.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30408208/pexels-photo-30408208/free-photo-of-fushimi-inari-shrine-torii-gates-in-kyoto.jpeg"
+        alt=""
+      />
+      <img
+        src="https://images.pexels.com/photos/30237034/pexels-photo-30237034/free-photo-of-chateau-de-le-lude-in-golden-hour.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

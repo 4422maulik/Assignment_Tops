@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>Tech News</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: "Montserrat", serif;
+      }
+      header {
+        background-color: lightsalmon;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 80px;
+        /* padding: 0 100px; */
+      }
+      header .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      header .logo h2 {
+        width: fit-content;
+      }
+      header .logo img {
+        width: fit-content;
+        padding: 0 10px;
+      }
+      header #toggle {
+        display: none;
+      }
+
+      header #toggle:checked + .nav-wrapper {
+        /* display: flex; */
+        visibility: visible;
+        right: 0;
+      }
+
+      header #toggle:checked + .nav-wrapper label {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+      }
+
+      header .nav-wrapper {
+        /* display: none; */
+        visibility: hidden;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 100%;
+
+        background: lightcoral;
+        flex-direction: column;
+
+        transition: all 300ms;
+      }
+
+      header .nav-wrapper nav {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      header .nav-wrapper nav a {
+        font-size: 24px;
+        text-align: center;
+        color: white;
+      }
+      header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      header nav a {
+        border: 1px solid rgb(216, 93, 45);
+        border-radius: 10px;
+        background-color: rgb(194, 135, 111);
+        padding: 3px 10px;
+        margin: 0px 30px;
+        text-decoration: none;
+        color: white;
+        /* padding: 10px; */
+      }
+      section {
+        /* width: 70%; */
+        margin-top: 20px;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      section .page {
+        /* width: 70%; */
+        width: 100%;
+      }
+      section h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        /* margin-top: 15px; */
+      }
+
+      section p img {
+        width: 55%;
+        float: left;
+        margin-right: 10px;
+        text-align: justify;
+        border: 2px solid black;
+      }
+      section .sidebar {
+        /* width: 30%; */
+        width: 100%;
+      }
+
+      section .sidebar li {
+        list-style: none;
+        margin-bottom: 10px;
+        border-bottom: 1px dotted black;
+      }
+      section .sidebar a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+        display: block;
+      }
+
+      section .sidebar a:hover {
+        color: brown;
+      }
+      footer {
+        background-color: beige;
+        height: 60px;
+        /* padding: 0 100px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.jpg" alt="logo" />
+        <h2>Tech News</h2>
+      </div>
+      <label for="toggle">
+        <i class="bi bi-list"></i>
+      </label>
+      <input type="checkbox" name="" id="toggle" />
+      <div class="nav-wrapper">
+        <label for="toggle">
+          <i class="bi bi-x-lg"></i>
+        </label>
+        <input type="checkbox" name="" id="toggle" />
+      <nav class="navigation">
+        <a href="">Home</a>
+        <a href="">Latest News </a>
+        <a href="">Mobile News </a>
+        <a href="">About</a>
+        <a href="">Contact </a>
+      </nav>
+    </header>
+    <section>
+      <div class="page">
+        <article class="article1">
+          <h1>The Elon Musk effect: Tech bros of the Silicon Valley unite</h1>
+          <p>
+            <img
+              src="https://images.indianexpress.com/2025/01/Tech-feature-images91.jpg?w=640"
+              alt=""
+            />
+            Donald Trump was sworn-in as the 47th president of the United State
+            of America on 20 January, and the President elect’s inauguration
+            seemed more like a scene out of a tech-billionaire get-together than
+            a ceremony to hand over reins of the States to its new president.
+            The tech bros of Silicon Valley were not just present at the
+            ceremony but had better seats than Trump’s own cabinet picks. It was
+            no surprise that Elon Musk, the world’s richest man, CEO of SpaceX,
+            Tesla and more recently X (formerly Twitter) was in attendance and
+            had a front row seat to the ceremony, given how strongly he
+            campaigned for the now POTUS. But what was surprising was that he
+            was not the only one. Mark Zuckerberg, CEO of Meta; Jeff Bezos
+            former CEO of Amazon; Tim Cook, CEO of Apple; Sam Altman, CEO of
+            OpenAI’ Sundar Pichai, CEO of Google; Shou Zi Chew, CEO of TikTok,
+            and many other tech leaders were at the ceremony as well.
+          </p>
+        </article>
+        <article class="article2">
+          <h1>
+            iOS 18.3 update enables Apple Intelligence on iPhones, introduces
+            Visual Intelligence
+          </h1>
+          <p>
+            <img
+              src="https://images.indianexpress.com/2024/12/vs-67.png?w=640"
+              alt=""
+            />Apple has begun seeding the iOS 18.3 update for eligible iPhones.
+            With this latest software release, the company is enabling Apple
+            Intelligence by default—a major push to expand its availability.
+            Until now, even on devices eligible for Apple Intelligence, users
+            had to manually enable it from the settings menu, which could be
+            challenging for non-tech-savvy individuals. With this update, the
+            rollout of its first set of AI features from Apple is nearly
+            complete. These include notification summaries (currently paused due
+            to errors in some summaries), writing tools, Image Playground,
+            ChatGPT-powered Siri, and Visual Intelligence.
+          </p>
+        </article>
+        <article class="article3">
+          <h1>
+            Donald Trump unveils $500 billion Stargate Project to build AI
+            infrastructure in the US, promising over 100K jobs
+          </h1>
+          <p>
+            <img
+              src="https://images.indianexpress.com/2025/01/Project-Stargate-Donald-Trump.jpg?w=640"
+              alt=""
+            />
+            On the second day of his presidency, Donald Trump announced billions
+            of dollars worth of investment to build artificial intelligence
+            infrastructure in the United States of America. Trump said that
+            three big players in the private sector—OpenAI, Softbank, and
+            Oracle—are planning a joint venture called Stargate. President Trump
+            was joined by OpenAI CEO Sam Altman, Softbank CEO Masayoshi Son, and
+            Oracle CEO Larry Ellison. Trump said that Stargate will invest at
+            least $500 billion into AI infrastructure in the US, creating over
+            100,000 American jobs almost immediately. “This monumental
+            undertaking is a strong vote of confidence in America’s future and
+            leadership under this administration. This project ensures that the
+            United States will remain the global leader in AI and technology,
+            rather than letting competitors like China gain the edge,” Trump
+            said.
+          </p>
+        </article>
+      </div>
+
+      <div class="sidebar">
+        <li>
+          <a class="s1" href="#"
+            >In first meet with Jaishankar, US Secretary of State Rubio flags
+            ‘irregular immigration’</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Sword hangs over Pataudi properties worth Rs 15,000 crore after
+            Saif Ali Khan was told to approach tribunal</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Hard labour with daily wage of Rs 105: how RG Kar rape convict
+            Sanjay Roy will spend time in jail</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Express Opinion: I’ve seen the real H-1B scam — it’s not what you
+            think</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >In first meet with Jaishankar, US Secretary of State Rubio flags
+            ‘irregular immigration’</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Sword hangs over Pataudi properties worth Rs 15,000 crore after
+            Saif Ali Khan was told to approach tribunal</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Hard labour with daily wage of Rs 105: how RG Kar rape convict
+            Sanjay Roy will spend time in jail</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Express Opinion: I’ve seen the real H-1B scam — it’s not what you
+            think</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >In first meet with Jaishankar, US Secretary of State Rubio flags
+            ‘irregular immigration’</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Sword hangs over Pataudi properties worth Rs 15,000 crore after
+            Saif Ali Khan was told to approach tribunal</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Hard labour with daily wage of Rs 105: how RG Kar rape convict
+            Sanjay Roy will spend time in jail</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Express Opinion: I’ve seen the real H-1B scam — it’s not what you
+            think</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Sword hangs over Pataudi properties worth Rs 15,000 crore after
+            Saif Ali Khan was told to approach tribunal</a
+          >
+        </li>
+        <li>
+          <a href="#"
+            >Hard labour with daily wage of Rs 105: how RG Kar rape convict
+            Sanjay Roy will spend time in jail</a
+          >
+        </li>
+      </div>
+    </section>
+    <footer>
+      <h3>@Technews</h3>
+    </footer>
+  </body>
+</html>

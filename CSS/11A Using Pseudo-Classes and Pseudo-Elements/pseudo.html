@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p::first-line {
+        color: red;
+        background-color: yellow;
+      }
+      h1 {
+        position: relative;
+        width: fit-content;
+        cursor: pointer;
+      }
+      h1::after {
+        content: "";
+        background-color: red;
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        transition: all 300ms;
+      }
+      h1:hover::after {
+        width: 0;
+        left: 0;
+      }
+      a {
+        text-decoration: none;
+        color: aquamarine;
+      }
+      a:hover {
+        color: rgb(225, 7, 7);
+      }
+      a:active {
+        color: brown;
+        background-color: red;
+      }
+      /* a:visited {
+        color: blueviolet;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Assignment11</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magni
+      accusamus harum, molestias ad minima quod dolor omnis! Sapiente assumenda,
+      placeat maiores repellat enim fugiat ducimus quaerat id adipisci ipsum
+      soluta doloribus quisquam animi accusantium non consectetur dolorum
+      necessitatibus temporibus? Modi, magni. Culpa atque qui dolore
+      exercitationem repellendus natus iure?
+    </p>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid aut a
+      repellat provident nulla harum odit nostrum voluptatibus amet quibusdam,
+      nihil accusantium obcaecati doloremque ratione delectus molestiae fuga
+      iste tempora ducimus sed rem ut asperiores debitis. Sequi officiis
+      laboriosam magnam quisquam autem inventore nisi quis veritatis illum
+      numquam recusandae, voluptatum aperiam ab, animi, temporibus architecto
+      error. Ipsam quod omnis facilis obcaecati suscipit doloremque, temporibus
+      aspernatur ab laudantium fuga autem iste consequatur distinctio mollitia.
+      Numquam rerum error molestias explicabo velit provident sunt assumenda ut
+      aut dignissimos ab molestiae quisquam impedit, qui totam consequuntur
+      expedita voluptatum omnis soluta placeat architecto, at quas?
+    </p>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero labore
+      possimus cupiditate eos facere ducimus, sunt laboriosam temporibus
+      excepturi sapiente, earum omnis corrupti nobis quia nostrum illo dicta
+      nemo voluptate.
+    </p>
+
+    <h1>Link</h1>
+    <a href="https://www.canva.com">Go To CAnva</a><br />
+    <a href="https://codepen.io/">Codepen</a><br />
+    <a href="https://www.awwwards.com/">Go to Website</a><br />
+  </body>
+</html>

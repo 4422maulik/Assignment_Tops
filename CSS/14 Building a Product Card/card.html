@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 300px;
+        margin: 50px auto;
+        background-color: white;
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card img {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      .card-title {
+        margin: 0;
+        font-size: 36px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: all 300ms;
+        color: #fffafa;
+
+      }
+      .card:hover{
+        box-shadow: 10px 10px 52px 0px rgba(0,0,0,0.75);
+      }
+      .card:hover .card-title {
+        opacity: 1; /
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img
+        src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Card Image"
+      />
+      <h2 class="card-title">Artificial Intelligence</h2>
+    </div>
+  </body>
+</html>

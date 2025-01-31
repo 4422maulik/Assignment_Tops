@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 50px;
+        padding: 20px 30px;
+        background-color: lightcyan;
+        font-size: 24px;
+      }
+
+      form label {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 10px 0;
+      }
+      form input {
+        width: 500px;
+        border-radius: 10px;
+        height: 50px;
+        font-size: 20px;
+        padding: 0 20px;
+        background-color: rgba(240, 144, 144, 0.139);
+      }
+      input::placeholder {
+        color: black;
+        font-size: 20px;
+      }
+      button {
+        width: fit-content;
+        padding: 10px 30px;
+        margin: 10px auto;
+        background-color: rgba(165, 42, 42, 0.299);
+        border-radius: 10px;
+        scale: 0.8;
+      }
+      #tables {
+        /* height: 300px; */
+        overflow: auto;
+        /* margin-top: 20px ; */
+        margin: 20px 100px;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid red;
+        border-collapse: collapse;
+        font-size: 32px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans";
+        padding: 10px;
+      }
+
+      th {
+        width: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="" id="">Name</label>
+      <input type="text" id="name" placeholder="Enter Your Name" required />
+      <label for="">City</label>
+      <input type="text" id="city" placeholder="Enter Your City" required />
+      <label for="">marks</label>
+      <input type="number" id="marks" placeholder="Enter Your marks" required />
+      <label for="">Phone Number</label>
+      <input
+        type="tel"
+        id="number"
+        placeholder="Enter Number"
+        maxlength="10"
+        required
+      />
+      <label for="">Massage</label>
+      <textarea
+        name=""
+        id="textarea"
+        placeholder="Enter Your Massage"
+      ></textarea>
+      <button>Submit</button>
+    </form>
+    <div id="tables">
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Phone Number</th>
+            <th>Massage<s/th></th>
+            <th>Marks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rahul</td>
+            <td>Rajkot</td>
+            <td>9876543210</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script>
+      const uname = document.querySelector("#name");
+      const city = document.querySelector("#city");
+      const number = document.querySelector("#number");
+      const textarea = document.querySelector("#textarea");
+      const marks = document.querySelector("#marks");
+
+      const btn = document.querySelector("button");
+      const tbl = document.querySelector("#table"); // console.log(uname.value);
+
+      btn.addEventListener("click", (e) => {
+        e.preventDefault(); //its used for stop refreshing.
+        console.log(uname.value);
+        console.log(city.value);
+        console.log(number.value);
+        console.log(textarea.value);
+
+        tr = document.createElement("tr");
+        tr.innerHTML = ` <td>${uname.value}</td>
+                    <td>${city.value}</td>
+                    <td>${number.value}</td>
+                    <td>${textarea.value}</td>
+                    <td>${marks.value}</td>`;
+
+        tbl.append(tr);
+
+        if (marks.value <= 60) {
+          tr.style.color = "red";
+        } else if (marks.value <= 70) {
+          tr.style.color = "orange";
+        } else if (marks.value <= 80) {
+          tr.style.color = "yellow";
+        } else if (marks.value <= 90) {
+          tr.style.color = "yellowgreen";
+        } else if (marks.value <= 100) {
+          tr.style.color = "green";
+        } else {
+        }
+      });
+      // for(i=0;)
+    </script>
+  </body>
+</html>
