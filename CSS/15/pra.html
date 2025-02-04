@@ -4,19 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-    <!-- Link to Font Awesome Icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="min768.css " />
     <style>
-    
+      * {
+        margin: 0 20px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Dancing Script", serif;
+      }
 
       .hero {
         background-color: navy;
@@ -34,23 +39,21 @@
         margin-bottom: 30px;
         width: 100%;
       }
+
       .features {
         display: block;
         background-color: #ffffff;
       }
-
-     
 
       .feature {
         display: block;
         margin: 30px auto;
         text-align: center;
         padding: 20px;
-        width: 30%;
+        /* width: 250px  ; */
         background-color: #d20909;
         border-radius: 10px;
       }
-
 
       .feature h3 {
         font-size: 20px;
@@ -61,9 +64,9 @@
         font-size: 16px;
         color: white;
       }
-      
+
       .feature i {
-        font-size:25px;
+        font-size: 25px;
         color: rgb(29, 29, 102);
         margin-bottom: 15px;
       }
@@ -76,13 +79,13 @@
       .contact h2 {
         font-size: 30px;
       }
-
     </style>
   </head>
   <body>
     <div class="hero">
       <h1>Welcome to Our Service</h1>
     </div>
+
     <div class="features">
       <h2>Features</h2>
       <div class="feature">
@@ -90,7 +93,22 @@
         <h3>Easy Setup</h3>
         <p>Get started quickly with an easy setup process.</p>
       </div>
-   
+      <div class="feature">
+        <i class="fas fa-cogs"></i>
+        <h3>Easy Setup</h3>
+        <p>Get started quickly with an easy setup process.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-cogs"></i>
+        <h3>Easy Setup</h3>
+        <p>Get started quickly with an easy setup process.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-cogs"></i>
+        <h3>Easy Setup</h3>
+        <p>Get started quickly with an easy setup process.</p>
+      </div>
+    </div>
 
     <div class="contact">
       <h2>Contact Us</h2>
