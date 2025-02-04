@@ -1,0 +1,15 @@
+@media (min-width:768px){
+    .features{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+    }
+    .feature{
+        
+        width: 250px;
+        background: green;
+    }
+}
